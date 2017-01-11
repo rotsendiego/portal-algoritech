@@ -42,10 +42,77 @@
 			
 			</div>
 			<!-- end: Flexslider -->
-      		
+			
+			<hr>
+			
+			<!-- start: Row -->
+			<div class="row">
+				
+				<!-- start: Icon Boxes -->
+				<div class="icons-box-vert-container">
 
-			<!-- start Clients List -->	
-			<h2 align = center >Nossos Clientes</h2>
+					<!-- start: Icon Box Start -->
+					<div class="span6">
+						<div class="icons-box-vert">
+							<i class="ico-ok ico-color circle-color big"></i>
+							<div class="icons-box-vert-info">
+								<h3>Titulo 1</h3>
+								<p>Teste 2 Teste 2 Teste 2Teste 2Teste 2Teste 2Teste 2</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<!-- end: Icon Box-->
+
+					<!-- start: Icon Box Start -->
+					<div class="span6">
+						<div class="icons-box-vert">
+							<i class="ico-cup  ico-white circle-color-full big-color"></i>
+							<div class="icons-box-vert-info">
+								<h3>Titulo 2</h3>
+								<p>Teste 2 Teste 2 Teste 2Teste 2Teste 2Teste 2Teste 2</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<!-- end: Icon Box -->
+
+					<!-- start: Icon Box Start -->
+					<div class="span6">
+						<div class="icons-box-vert">
+							<i class="ico-ipad ico-color circle-color big"></i>
+							<div class="icons-box-vert-info">
+								<h3>Titulo 3</h3>
+								<p>Teste 2 Teste 2 Teste 2Teste 2Teste 2Teste 2Teste 2</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<!-- end: Icon Box -->
+
+					<!-- start: Icon Box Start -->
+					<div class="span6">
+						<div class="icons-box-vert">
+							<i class="ico-thumbs-up  ico-white circle-color-full big-color"></i>
+							<div class="icons-box-vert-info">
+								<h3>Titulo 4</h3>
+								<p>Teste 2 Teste 2 Teste 2Teste 2Teste 2Teste 2Teste 2</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<!-- end: Icon Box -->
+
+				</div>
+				<!-- end: Icon Boxes -->
+				<div class="clear"></div>
+			</div>
+			<!-- end: Row -->
+			
+			<hr>
+			
+<!-- start Clients List -->	
+			<h2 align = center >Nossos Clientes:</h2>
 			
 			<hr>
 			<div class="clients-carousel">
@@ -63,75 +130,8 @@
 				</ul>
 			</div>
 			<!-- end Clients List -->
-		
-			<hr>
-			
-			<!-- start: Row -->
-			<div class="row">
-				
-				<!-- start: Icon Boxes -->
-				<div class="icons-box-vert-container">
+	
 
-					<!-- start: Icon Box Start -->
-					<div class="span6">
-						<div class="icons-box-vert">
-							<i class="ico-ok ico-color circle-color big"></i>
-							<div class="icons-box-vert-info">
-								<h3>Easy to use</h3>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<!-- end: Icon Box-->
-
-					<!-- start: Icon Box Start -->
-					<div class="span6">
-						<div class="icons-box-vert">
-							<i class="ico-cup  ico-white circle-color-full big-color"></i>
-							<div class="icons-box-vert-info">
-								<h3>Best choice</h3>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<!-- end: Icon Box -->
-
-					<!-- start: Icon Box Start -->
-					<div class="span6">
-						<div class="icons-box-vert">
-							<i class="ico-ipad ico-color circle-color big"></i>
-							<div class="icons-box-vert-info">
-								<h3>Fully Responsive</h3>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<!-- end: Icon Box -->
-
-					<!-- start: Icon Box Start -->
-					<div class="span6">
-						<div class="icons-box-vert">
-							<i class="ico-thumbs-up  ico-white circle-color-full big-color"></i>
-							<div class="icons-box-vert-info">
-								<h3>Social Network</h3>
-								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<!-- end: Icon Box -->
-
-				</div>
-				<!-- end: Icon Boxes -->
-				<div class="clear"></div>
-			</div>
-			<!-- end: Row -->
-			
-			<hr>
-			
 		</div>
 		<!--end: Container-->
 				

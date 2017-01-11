@@ -24,7 +24,7 @@
 							<div class="clearfix">
 								<label for="name"><span>Nome Completo:</span></label>
 								<div class="input">
-									<input tabindex="1" size="18" id="name" name="name" type="text" value="">
+									<input tabindex="1" size="18" id="name" name="name" type="text" value="" style="width:270px;">
 								</div>
 							</div>
 
@@ -67,12 +67,29 @@
 					
 					</form>
 					
+			
+				
+
 				</div>
-				<!-- end: Contact Form -->
+				<!-- end: Icon Boxes -->
+				
+			</div>
+			<!-- end: Row -->
+			
+			<hr>
+			
+		</div>
+		<!--end: Container-->
+				
+		<!--start: Container -->
+    	<div class="container">		
 
+      		<!-- start: Footer Menu -->
+			<div id="footer-menu" class="hidden-tablet hidden-phone">
 
-
+				<!-- start: Container -->
+				<div class="container">
+				
 <?php
 	include ('footer.php');
-?>
-		
+?>					

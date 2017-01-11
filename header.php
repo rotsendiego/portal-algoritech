@@ -84,7 +84,7 @@
 										</div>
 									</div>
 								</li>
-								<li>
+								<!--<li>
 									<div class="social-small-item">				
 										<div class="social-small-info-wrap">
 											<div class="social-small-info">
@@ -97,7 +97,7 @@
 											</div>
 										</div>
 									</div>
-								</li>
+								</li> -->
 								<li>
 									<div class="social-small-item">				
 										<div class="social-small-info-wrap">
@@ -134,20 +134,18 @@
           				</a>
           				<div class="nav-collapse collapse">
             				<ul class="nav">
-              					<li class="active"><a href="index.php">Home</a></li>
-              					<li><a href="#">About</a></li>
-								<li><a href="services.php">Services</a></li>
-              					<li><a href="contact.php">Contact</a></li>
+              					<li class="active"><a href="index.php">Início</a></li>
+              					<li><a href="#">Sobre Algoritech</a></li>
+								
+              					<li><a href="contact.php">Contato</a></li>
+              					<li><a href="precadastro.php">Cadastre-se</a></li>
               					<li class="dropdown">
-                					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Serviços<b class="caret"></b></a>
                 					<ul class="dropdown-menu">
-                  						<li><a href="#">Action</a></li>
-                  						<li><a href="#">Another action</a></li>
-                  						<li><a href="#">Something else here</a></li>
+                  						<li><a href="#">Teste 1</a></li>
                   						<li class="divider"></li>
-                  						<li class="nav-header">Nav header</li>
-                  						<li><a href="#">Separated link</a></li>
-                  						<li><a href="#">One more separated link</a></li>
+                  						<li class="nav-header">Título</li>
+                  						<li><a href="#">Teste 2</a></li>
                 					</ul>
               					</li>
             				</ul>

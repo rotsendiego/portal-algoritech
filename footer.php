@@ -16,15 +16,13 @@
 
 								<ul id="footer-nav">
 
-									<li><a href="index.html">Start</a></li>
+									<li><a href="index.html">Início</a></li>
 
-									<li><a href="about.html">About</a></li>
+									<li><a href="about.html">Sobre Algoritech</a></li>
 
-									<li><a href="services.html">Services</a></li>
-
-									<li><a href="pricing.html">Pricing</a></li>
+									<li><a href="services.html">Serviços</a></li>
 								
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="contact.html">Contato</a></li>
 
 								</ul>
 
@@ -64,9 +62,9 @@
 						<!-- start: About -->
 						<div class="span3">
 						
-							<h3>About Us</h3>
+							<h3>Sobre nós</h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+								Teste
 							</p>
 							
 						</div>
@@ -75,7 +73,7 @@
 						<div class="span6">
 					
 							<!-- start: Follow Us -->
-							<h3>Follow Us!</h3>
+							<h3>Nossas Redes Sociais!</h3>
 							<ul class="social-grid">
 								<li>
 									<div class="social-item">				
@@ -105,7 +103,7 @@
 										</div>
 									</div>
 								</li>
-								<li>
+							<!--	<li>
 									<div class="social-item">				
 										<div class="social-info-wrap">
 											<div class="social-info">
@@ -118,7 +116,7 @@
 											</div>
 										</div>
 									</div>
-								</li>
+								</li> -->
 								<li>
 									<div class="social-item">				
 										<div class="social-info-wrap">
@@ -138,11 +136,11 @@
 					
 							<!-- start: Newsletter -->
 							<form id="newsletter">
-								<h3>Newsletter</h3>
-								<p>Please leave us your email</p>
+								<h3>Receba Nossas Notícias</h3>
+								<p>Por favor, insira seu e-mail</p>
 								<label for="newsletter_input">@:</label>
 								<input type="text" id="newsletter_input"/>
-								<input type="submit" id="newsletter_submit" value="submit">
+								<input type="submit" id="newsletter_submit" value="Assinar">
 							</form>
 							<!-- end: Newsletter -->
 					
