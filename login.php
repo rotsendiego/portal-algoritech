@@ -19,9 +19,9 @@
 	            <div class="image-login">
 	            	<img  height="320" width="300" src="img/algoritech_logo.jpeg">
 	            </div>
-                <form class="form-signin">
-                <input style="width:330;" type="text" class="form-control" placeholder="Email" required autofocus>
-                <input style="width:330;"" type="password" class="form-control" placeholder="Senha" required>
+                <form class="form-signin" id="formLogin">
+                <input type="text" class="form-control" placeholder="Email" required autofocus>
+                <input type="password" class="form-control" placeholder="Senha" required>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
                     Entrar</button>
                 <label class="checkbox pull-left">
@@ -30,6 +30,7 @@
                 </label>
                 <a href="#" class="pull-right need-help">Ajuda</a><span class="clearfix"></span>
                 </form>
+
             </div>
             <a href="portal-algoritech/precadastro.php" class="text-center new-account">Crie um cadastro</a>
         </div>
