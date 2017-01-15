@@ -23,9 +23,9 @@
 	<!-- end: Facebook Open Graph -->
 
     <!-- start: CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
@@ -134,11 +134,11 @@
           				</a>
           				<div class="nav-collapse collapse">
             				<ul class="nav">
-              					<li class="active"><a href="index.php">Início</a></li>
+              					<li class="active"><a href="../index.php">Início</a></li>
               					<li><a href="#">Sobre Algoritech</a></li>
 								
-              					<li><a href="contact.php">Contato</a></li>
-              					<li><a href="precadastro.php">Cadastre-se</a></li>
+              					<li><a href="../contact.php">Contato</a></li>
+              					<li><a href="../precadastro.php">Cadastre-se</a></li>
               					<li class="dropdown">
                 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Serviços<b class="caret"></b></a>
                 					<ul class="dropdown-menu">

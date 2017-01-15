@@ -4,7 +4,7 @@
 						<!-- start: Footer Menu Logo -->
 						<div class="span1">
 							<div id="footer-menu-logo">
-								<a href="#"><img src="img/logo-footer-menu.png" alt="logo" /></a>
+								<a href="#"><img src="../img/logo-footer-menu.png" alt="logo" /></a>
 							</div>
 						</div>
 						<!-- end: Footer Menu Logo -->
@@ -177,11 +177,11 @@
 
 <!-- start: Java Script -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery-1.8.2.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/flexslider.js"></script>
-<script src="js/carousel.js"></script>
-<script def src="js/custom.js"></script>
+<script src="../js/jquery-1.8.2.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/flexslider.js"></script>
+<script src="../js/carousel.js"></script>
+<script def src="../js/custom.js"></script>
 <!-- end: Java Script -->
 
 </body>
