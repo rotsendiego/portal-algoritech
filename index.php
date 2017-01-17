@@ -18,13 +18,21 @@
 
 </style>
 
+<?php
+    session_start();
+    if (isset($_SESSION['message'])) {
+      if ($_SESSION['message'] != null) {
+          print '<script type="text/javascript">alert("' . $_SESSION['message'] . '");</script>';
+          $_SESSION['message'] = null;
+      }
+    }
 
+?>
 
-<div style="padding-top: 10%">
+<div style="padding-top: 4%">
 
 </div>
 <div class="image-login">
-<!--    <img style="padding-right: 4%" height="320" width="300" src="img/algoritech_logo.jpeg">-->
     <img style="padding-right: 4%" height="320" width="300" src="img/logos/algoritech-fundo-transp.png">
 </div>
 <div class="container">
@@ -34,7 +42,7 @@
 <!--            <div class="account-wall">-->
 
                 <br>
-                <form class="form-signin" id="formLogin" method="post">
+                <form class="form-signin" id="formLogin" method="post" action="controllers/loginController.php">
                     <input type="text" id="username" name="username" class="form-control" placeholder="Login (E-mail)" required autofocus style="margin-bottom: 10px;" />
                     <input type="password" id="password" name="password" class="form-control" placeholder="Senha" required style="margin-bottom: 10px;" />
                     <div class="checkbox">
@@ -43,7 +51,7 @@
                             Lembrar Senha
                         </label>
                     </div>
-                    <button class="btn btn-lg btn-success btn-block" type="submit" style="width: 300px; height: 40px;">
+                    <button class="btn btn-lg btn-success btn-block" type="button" onclick="validarCampos();" style="width: 300px; height: 40px;">
                         Entrar
                     </button>
                 </form>
@@ -59,16 +67,42 @@
                     <br>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" value="checkTermos" name="usuario['check_termos']"/>
+                            <input type="checkbox" value="checkTermos" id="checkTermos" name="usuario['check_termos']"/>
                             Sim, eu concordo com os <a href="#"><b>Termos de uso</b>.</a>
                         </label>
                     </div>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 300px; height: 40px;">
+                    <button class="btn btn-lg btn-primary btn-block" type="button" onclick="validarCheck();" style="width: 300px; height: 40px;">
                         Cadastrar
                     </button>
                 </form>
+
 <!--            </div>-->
 <!--            <a href="portal-algoritech/precadastro.php" class="text-center new-account">Crie um cadastro</a>-->
         </div>
     </div>
 </div>
+
+<script>
+    function validarCheck() {
+        var marcouTermo = document.getElementById("checkTermos").checked;
+        var login = document.getElementById("login_email").value;
+        var email_confirma = document.getElementById("email_confirma").value;
+        var senha = document.getElementById("senha").value;
+        var senha_confirma = document.getElementById("senha_confirma").value;
+
+        if (marcouTermo && login!=null && senha!=null) {
+            document.getElementById('formCadastro').submit();
+        } else {
+            alert("Para realizar o cadastro, favor concordar com os Termos de uso.");
+        }
+    }
+
+    function validarCampos() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username != null && password!= null) {
+            document.getElementById('formLogin').submit();
+        }
+    }
+</script>

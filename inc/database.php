@@ -82,7 +82,7 @@ function find( $table = null, $id = null ) {
  *  Insere um registro no BD
  */
 function save($table = null, $data = null) {
-    $retorno = false;
+
     try {
         $database = open_database();
         $columns = null;
@@ -156,4 +156,56 @@ function remove( $table = null, $id = null ) {
         $_SESSION['type'] = 'danger';
     }
     close_database($database);
+}
+
+function verificaLogin($login) {
+    $database = open_database();
+    $existe = false;
+
+    try {
+        $sql = "SELECT * FROM usuarios WHERE login_email = '$login' ";
+
+        $search = mysqli_query($database, $sql);
+
+        if (isset($search)) {
+            $row = mysqli_fetch_array($search,MYSQLI_ASSOC);
+        }
+
+//        var_dump($row);
+
+        if(isset($row) > 0){
+            $existe = true;
+        }
+
+    } catch (Exception $e) {
+        $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
+        $_SESSION['type'] = 'danger';
+    }
+
+    close_database($database);
+
+    return $existe;
+
+}
+
+function verificaUsuarioExiste($login, $pass) {
+    $database = open_database();
+
+    try {
+        $sql = "SELECT * FROM usuarios WHERE login_email = '$login' AND senha = '$pass'";
+
+        $search = mysqli_query($database, $sql);
+
+        if (isset($search)) {
+            $row = mysqli_fetch_array($search,MYSQLI_ASSOC);
+        }
+
+    } catch (Exception $e) {
+        $_SESSION['message'] = 'Nao foi possivel realizar a operacao.';
+        $_SESSION['type'] = 'danger';
+    }
+
+    close_database($database);
+
+    return $row;
 }

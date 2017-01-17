@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once('../config.php');
 require_once(DBAPI);
 
@@ -7,33 +7,32 @@ $usuario = null;
 
 $db = open_database();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome_completo = $_POST['nome_completo'];
-    $login_email = $_POST['login_email'];
-    $email_confirma = $_POST['email_confirma'];
-    $senha = $_POST['senha'];
-    $senhaConfirma = $_POST['senha_confirma'];
+    $usuario['login_email'] = trim($_POST['login_email']);
 
-    $resultado = validarEmails($login_email, $email_confirma);
+    $retorn = verificaLoginExistente($usuario['login_email']);
 
-    if ($resultado == 0) {
-        $usuario['login_email'] = $login_email;
-    }
+    if ($retorn == false) {
+        $usuario['nome_completo']  = $_POST['nome_completo'];
 
-    $resultado = validarSenhas($senha, $senhaConfirma);
+        $usuario['senha'] = $_POST['senha'];
 
-    if ($resultado == 0) {
-        $usuario['nome_completo'] = $nome_completo;
-        $usuario['senha'] = $senha;
         $today =
             date_create('now', new DateTimeZone('America/Recife'));
 
         $usuario['modified'] = $usuario['created'] = $today->format("Y-m-d H:i:s");
-        var_dump($usuario);
+
         save('usuarios', $usuario);
-        echo "<script>alert(" . json_encode($_SESSION['message']) . ")</script>";
+    } else {
+        $_SESSION['message'] = "Login já existe no nosso Sistema. Tente outro e-mail!";
     }
 
-    header('location: ../index.php');
+}
+header("Location: ../index.php");
+
+function verificaLoginExistente($login) {
+    $retorno = verificaLogin($login);
+
+    return $retorno;
 }
 
 /*
