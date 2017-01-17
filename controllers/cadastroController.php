@@ -7,14 +7,14 @@ $usuario = null;
 
 $db = open_database();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario['login_email'] = trim($_POST['login_email']);
+    $usuario['nome']  = $_POST['nome'];
+    $usuario['senha'] = $_POST['senha'];
+    $usuario['tipo_acesso'] = 1; // valor 1 - usuario comum
+    $usuario['email'] = trim($_POST['email']);
 
-    $retorn = verificaLoginExistente($usuario['login_email']);
+    $retorn = verificaLoginExistente($usuario['email']);
 
     if ($retorn == false) {
-        $usuario['nome_completo']  = $_POST['nome_completo'];
-
-        $usuario['senha'] = $_POST['senha'];
 
         $today =
             date_create('now', new DateTimeZone('America/Recife'));

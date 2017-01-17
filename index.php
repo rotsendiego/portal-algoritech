@@ -1,22 +1,25 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link href='css/login.css' rel='stylesheet' type='text/css'>
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/bootstrap-responsive.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/bootstrap-responsive.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+    <link href='css/login.css' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
 
-<style>
-    .form.input {
-        margin-bottom: 5px;
-    }
+    <style>
+        .form.input {
+            margin-bottom: 5px;
+        }
 
-</style>
+    </style>
+</head>
 
 <?php
     session_start();
@@ -57,12 +60,14 @@
                 </form>
                 <form class="form-signin" id="formCadastro" method="post" action="controllers/cadastroController.php">
                     <h2>Criar uma nova conta</h2>
-                    <input type="text" id="nome_completo" name="nome_completo" class="form-control" placeholder="Nome Completo" required style="margin-bottom: 10px;" />
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome Completo" required style="margin-bottom: 10px;" />
                     <div class="form-group">
-                        <input type="text" id="login_email" name="login_email" class="form-control" placeholder="Login (E-mail)" required style="margin-bottom: 10px;" />
+                        <input type="text" id="email" name="email" class="form-control" placeholder="Login (E-mail)" required style="margin-bottom: 10px;" />
                         <input type="text" id="email_confirma" name="email_confirma" class="form-control" placeholder="Confirmar Login (E-mail)" required style="margin-bottom: 10px;" />
                     <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required style="margin-bottom: 10px;" />
                     <input type="password" id="senha_confirma" name="senha_confirma" class="form-control" placeholder="Confirmar Senha" required style="margin-bottom: 10px;" />
+                        <input type="hidden" id="tipo_acesso" name="tipo_acesso" class="form-control" />
+
                     <br>
                     <br>
                     <div class="checkbox">
@@ -85,7 +90,7 @@
 <script>
     function validarCheck() {
         var marcouTermo = document.getElementById("checkTermos").checked;
-        var login = document.getElementById("login_email").value;
+        var login = document.getElementById("email").value;
         var email_confirma = document.getElementById("email_confirma").value;
         var senha = document.getElementById("senha").value;
         var senha_confirma = document.getElementById("senha_confirma").value;
