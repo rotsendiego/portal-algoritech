@@ -90,13 +90,16 @@
 <script>
     function validarCheck() {
         var marcouTermo = document.getElementById("checkTermos").checked;
+        var nome = document.getElementById("nome").value;
         var login = document.getElementById("email").value;
         var email_confirma = document.getElementById("email_confirma").value;
         var senha = document.getElementById("senha").value;
         var senha_confirma = document.getElementById("senha_confirma").value;
 
-        if (marcouTermo && login!=null && senha!=null) {
+        if (marcouTermo && nome!="" && login!="" && senha!="" && email_confirma!="" && senha_confirma!="") {
             document.getElementById('formCadastro').submit();
+        } else if (nome=="" || login=="" || senha=="" || email_confirma=="" || senha_confirma==""){
+            alert("Favor preencher os campos em branco!");
         } else {
             alert("Para realizar o cadastro, favor concordar com os Termos de uso.");
         }
@@ -106,8 +109,10 @@
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
 
-        if (username != null && password!= null) {
+        if (username != "" && password!= "") {
             document.getElementById('formLogin').submit();
+        } else {
+            alert("Favor preencher os campos Login / Senha.");
         }
     }
 </script>
