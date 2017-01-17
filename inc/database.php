@@ -192,7 +192,7 @@ function verificaUsuarioExiste($login, $pass) {
     $database = open_database();
 
     try {
-        $sql = "SELECT * FROM usuarios WHERE login_email = '$login' AND senha = '$pass'";
+        $sql = "SELECT * FROM usuarios WHERE email = '$login' AND senha = '$pass'";
 
         $search = mysqli_query($database, $sql);
 
